@@ -69,3 +69,12 @@ function removerItem(id) {
     .delete()
     .then(() => carregarItens());
 }
+
+function logout() {
+    firebase.auth().signOut().then(() => {
+      window.location.href = "login.html";
+    }).catch((error) => {
+      console.error("Erro ao sair:", error);
+    });
+  }
+  

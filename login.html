@@ -12,12 +12,14 @@
   <button onclick="login()">Entrar</button>
   <button onclick="cadastro()">Cadastrar</button>
 
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+<!-- Firebase v8 (compatível com uso direto no navegador) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
 <script src="firebaseConfig.js"></script>
-<script src="auth.js"></script>      <!-- para login.html -->
-<script src="app.js"></script>       <!-- para index.html -->
+<script src="auth.js"></script> <!-- só no login.html -->
+<script src="app.js"></script>  <!-- só no index.html -->
 
 </body>
 </html>
